@@ -14,14 +14,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <h3 class="bg-primary text-white text-center p-2">MomentJs Example</h3>
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <h5 class="card-title">Default Date Format</h5>
+                        <p class="card-text" id="defaultDateFormat"></p>
                     </div>
                 </div>
             </div>
@@ -41,15 +38,9 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"
         type=""></script>
 
-    <!-- Declaration Block -->
-    <script>
-
-    </script>
-
-    <script>
-        moment.locale('ja');
-        const dateFormat = moment().format('MMMM Do YYYY, h:mm:ss a');
-        console.log(dateFormat);
+    <!-- Include Locale File -->
+    <script type="text/javascript" src="locale/ja.js"></script>
+    <script type="text/javascript" src="common.js"></script>
     </script>
 </body>
 
